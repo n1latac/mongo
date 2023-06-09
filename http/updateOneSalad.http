@@ -1,0 +1,7 @@
+PATCH http://localhost:5000/648271eed094e6044e486e18 HTTP/1.1
+Content-Type: application/json
+
+{
+    "weight": 2,
+    "catch": false
+}
