@@ -4,6 +4,7 @@ mongoose.connect('mongodb://localhost:27017/fm')
 .catch(err=>{
     console.log('connection failed')
     //next(err)
+    process.exit(1)
 })
 
 const saladSchema = new mongoose.Schema({
