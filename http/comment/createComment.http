@@ -1,0 +1,7 @@
+POST http://localhost:5000/api/comments/6485fc9ab12032d2f719991b HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "test",
+    "text": "message"
+}
