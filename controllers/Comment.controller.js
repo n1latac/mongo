@@ -14,5 +14,11 @@ module.exports.createComment = async(req, res, next) => {
     }
 }
 module.exports.getComment = async(req, res, next) => {
-    
+    try {
+        const {params: {commentId}} = req
+        const comment = await Comment.findById(commentId).populate('userId')
+        res.status(200).send(comment)
+    } catch (error) {
+        next(error)
+    }
 }
